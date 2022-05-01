@@ -77,18 +77,15 @@ public:
 
 int main()
 {
-    char embg[13], ime[20], prezime[20], kategorija[20];
+    char embg[14], ime[20], prezime[20], kategorija[20];
     int broj, n;
     cin >> n;
     for(int i = 0; i < n; i++){
         cin >> embg >> ime >> prezime;
-        cout << "Maticniot e: " << embg;
         Potpisuvac p1(ime, prezime, embg);
         cin >> embg >> ime >> prezime;
-        cout << "Maticniot e: " << embg;
         Potpisuvac p2(ime, prezime, embg);
         cin >> embg >> ime >> prezime;
-        cout << "Maticniot e: " << embg;
         Potpisuvac p3(ime, prezime, embg);
         cin >> broj >> kategorija;
         Potpisuvac p[3];
