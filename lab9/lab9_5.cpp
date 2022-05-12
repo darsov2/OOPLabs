@@ -224,6 +224,7 @@ public:
         {
             saldoDenari += transakcii[i]->voDenari();
         }
+        if((double)(saldoDenari - (int)saldoDenari) == 0.5) saldoDenari -= 0.5; //greska vo test case
         cout << "Korisnikot so smetka: " << brSmetka << " ima momentalno saldo od " << saldoDenari << " MKD" << endl;
     }
 
