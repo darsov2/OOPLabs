@@ -108,8 +108,7 @@ public:
 
     double rating()
     {
-        NBAPlayer::rating();
-        allStarRating();
+        return (NBAPlayer::rating() + allStarRating()) / 2;
     }
 
     void print()
